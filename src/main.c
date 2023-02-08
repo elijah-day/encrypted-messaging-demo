@@ -65,10 +65,6 @@ typedef struct msg_data_t
 }
 msg_data_t;
 
-/* msg_data_t includes all the data that needs to be sent to the server per
-message.  This does not include the public keys which should be exchanged
-during the initial connection */
-
 /* Variables */
 static bool is_running;
 static char recv_msg_buf[MAX_MSG_LEN];
@@ -168,8 +164,7 @@ void run_server(int argc, char *argv[])
 		SDLNet_TCP_AddSocket(socket_set, server_socket);
 		
 		/* NOTE: In a more serious application each of these functions
-		should have their return values checked to trace any errors to
-		the places that they originated. */
+		should have their return values checked to trace any errors. */
 		
 		/* Make sure all clients are set to be disconnected */
 		for(int i = 0; i < MAX_CLIENT_CNT; i++)
