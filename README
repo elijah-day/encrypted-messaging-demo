@@ -1,0 +1,12 @@
+Copyright (C) 2023 Elijah Day
+
+Encrypted messaging app demo (client and server) using SDL2 (SDL_net 2.0) for
+networking and Sodium for encryption.
+
+This software is distributed under the MIT license.  See LICENSE for more
+information.
+
+This software utilizes SDL2 for cross-platform graphics and hardware
+access.  Visit https://www.libsdl.org/ for more information.
+
+For more information about Sodium, see https://www.libsodium.org.
